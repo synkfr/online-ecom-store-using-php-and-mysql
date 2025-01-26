@@ -1,0 +1,450 @@
+.Poppins {
+	font-family: "Poppins", serif !important;
+	font-size: 14px;
+}
+
+.main {
+padding-left: 5px;
+padding-right: 5px;
+padding-top: 12px;
+padding-bottom: 12px;
+background-color: #121212;
+}
+
+
+.shopping_cart .btn:hover {
+background-color: #32cd32;
+border-color: #343a40;
+transition: background-color 0.3s, border-color 0.3s;
+}
+
+.shopping_cart .btn i {
+font-size: 1.2rem;
+}
+
+.shopping_cart .btn .no_product {
+font-size: 0.9rem;
+}
+
+/* Adding a gradient overlay on the carousel images */
+.carousel-item img {
+object-fit: cover;
+filter: brightness(80%) contrast(120%);
+transition: filter 0.3s ease-in-out;
+}
+
+.carousel-item img:hover {
+filter: brightness(100%) contrast(100%);
+}
+
+/* Shadow effect on carousel */
+.carousel-inner {
+box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth card hover shadow effect */
+.card:hover {
+box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+transform: translateY(-5px);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Custom CSS for Responsive Product Cards */
+
+/* For small devices (Mobile) */
+@media (max-width: 575px) {
+.product-grid .col-6 {
+/* Make products take half the width on small devices */
+flex: 0 0 50%;
+max-width: 50%;
+}
+.product-grid .card {
+width: 100%;
+margin-bottom: 1rem;
+}
+}
+
+/* For medium devices (Tablets) */
+@media (min-width: 576px) and (max-width: 767px) {
+.product-grid .col-md-4 {
+/* Make products take 1/3 of the width on tablets */
+flex: 0 0 33.33%;
+max-width: 33.33%;
+}
+}
+
+/* For large devices (Desktops) */
+@media (min-width: 768px) and (max-width: 991px) {
+.product-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+
+.product-grid .col-lg-3 {
+/* Make products take 1/4 of the width on larger desktops */
+flex: 0 0 23%; /* 4 products per row */
+max-width: 23%;
+}
+}
+
+/* For extra large devices (Larger screens) */
+@media (min-width: 1200px) {
+.product-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between; /* Distribute space between items */
+}
+
+.product-grid .col-lg-3 {
+/* Make products take 1/4 of the width on larger desktops */
+flex: 0 0 23%; /* 4 products per row */
+max-width: 23%;
+}
+}
+
+/* Hover Effect for Card Images */
+.card-img-top.transition-all:hover {
+transform: scale(1.02);
+transition: transform 0.3s ease-in-out;
+}
+
+/* Gradient Background for Header */
+.bg-gradient {
+background: linear-gradient(to right, #6a11cb, #2575fc);
+}
+
+
+/* Hover effect for Card */
+.card:hover {
+transform: translateY(-3px);
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+.btn-outline-dark:hover {
+background-color: #d5d5d5;
+color: #fff;
+}
+
+.header-top-right {
+	gap: 1rem;
+}
+
+.shopping_cart .badge {
+	font-size: 0.75rem;
+	padding: 0.4em 0.5em;
+}
+
+.shopping_cart a:hover {
+	background-color: #f8f9fa;
+}
+
+.login a {
+	transition: all 0.3s ease;
+}
+
+.navbar {
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+	margin-right: 0.5rem;
+	padding: 0.5rem 1rem;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+	color: #fff !important;
+	background-color: #32cd32 !important;
+	border-radius: 0.3rem;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+	font-weight: bold;
+	background-color:#006400;
+	color: #fff !important;
+	border-radius: 0.3rem;
+}
+
+.navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2888, 88, 88, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.sticky-top {
+	z-index: 1020; /* Ensure it stays above other elements */
+}
+
+/* Header Bottom */
+.header_bottom {
+	padding: 2rem 0;
+	background-color: #121212;
+}
+
+/* Products Grid */
+.product-grid {
+	margin-top: 2rem;
+}
+
+/* Card Styling */
+.card {
+	background-color: #1a1a1a;
+    border: none;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+	object-fit: cover;
+}
+
+.card-title {
+	color: #32cd32;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+.card-text {
+	color: #b0b0b0;
+	font-size: 0.9rem;
+}
+
+/* Button Styling */
+.btn-primary {
+	background-color: #006400;
+    border-color: #004d00;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+	background-color: #32cd32;
+	transform: scale(1.02);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	.carousel-inner img {
+		max-height: 250px;
+	}
+
+	.card-img-top {
+		max-height: 200px;
+	}
+
+	.card-title {
+		font-size: 0.9rem;
+	}
+
+	.card-text {
+		font-size: 0.8rem;
+	}
+}
+
+ /* Heading Styles */
+ .heading {
+	background: linear-gradient(to right, #6a11cb, #2575fc);
+	color: #fff;
+}
+
+.heading h3 {
+	font-size: 1.8rem;
+}
+
+/* Product Grid Styles */
+.row.g-4 {
+	margin-top: 1rem;
+}
+
+/* Card Styles */
+.card {
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+	transform: scale(1.05);
+}
+
+.card-title {
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+.card-text {
+	font-size: 0.9rem;
+	color: #d0d0d0;
+}
+
+.price {
+    color: #32cd32;
+    font-size: 1.2rem;
+}
+
+/* Button Styles */
+.btn-outline-dark {
+	border-color: #32cd32;
+    color: #32cd32;
+	transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+	background-color: #32cd32;
+    color: #ffffff;
+	transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+	.card-img-top {
+		max-height: 150px;
+	}
+
+	.card-title {
+		font-size: 1rem;
+	}
+
+	.card-text {
+		font-size: 0.85rem;
+	}
+
+	.price {
+		font-size: 1rem;
+	}
+}
+
+/* Footer */
+.footer {
+    background: linear-gradient(135deg, #0f3d0f, #121212);
+    color: #ccc;
+    font-size: 0.9rem;
+    padding: 2rem 0;
+}
+
+.footer h4 {
+    color: #32cd32;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.footer a {
+    color: #ccc;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #32cd32;
+    transform: translateX(5px);
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+}
+
+.footer ul li {
+    margin-bottom: 0.6rem;
+}
+
+/* Social Icons */
+.footer ul.d-flex li a {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: #ccc;
+    border: 2px solid #32cd32;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer ul.d-flex li a:hover {
+    color: #121212;
+    background-color: #32cd32;
+    transform: scale(1.2);
+}
+
+/* Back-to-Top Button */
+#toTop {
+    background: linear-gradient(45deg, #006400, #32cd32);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.3);
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+    font-size: 1.2rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#toTop:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 15px rgba(0, 255, 0, 0.5);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+
+    .footer ul.d-flex {
+        justify-content: center;
+    }
+
+    .footer ul.d-flex li {
+        margin-right: 0.8rem;
+    }
+
+    .footer ul.d-flex li:last-child {
+        margin-right: 0;
+    }
+
+    .card-img-top {
+        max-height: 150px;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+
+    .price {
+        font-size: 1rem;
+    }
+}
