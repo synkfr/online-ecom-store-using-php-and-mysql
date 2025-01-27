@@ -90,12 +90,6 @@ $cmr = new Customer();
                 <?php if (Session::get("cuslogin")) { ?>
                     <li class="nav-item"><a class="nav-link" href="profile.php">Profile</a></li>
                 <?php } ?>
-                <?php if ($pd->getCompareData(Session::get("cmrId"))) { ?>
-                    <li class="nav-item"><a class="nav-link" href="compare.php">Compare</a></li>
-                <?php } ?>
-                <?php if ($pd->checkWlistData(Session::get("cmrId"))) { ?>
-                    <li class="nav-item"><a class="nav-link" href="wishlist.php">Wishlist</a></li>
-                <?php } ?>
                 <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
             </ul>
         </div>
