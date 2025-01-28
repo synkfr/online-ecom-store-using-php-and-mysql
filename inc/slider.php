@@ -33,7 +33,6 @@
       <div class="col-lg-8 col-md-12 Poppins">
 	  <h3 class="text-white fw-bold mb-0">Latest Products</h3>
         <div class="row product-grid">
-          <!-- iPhone Products -->
     <?php 
     $getIphone = $pd->latestFromIphone();
     if ($getIphone) {
@@ -51,7 +50,6 @@
     </div>
     <?php }} ?>
 
-    <!-- Samsung Products -->
     <?php 
     $getSamsung = $pd->latestFromSamsung();
     if ($getSamsung) {
@@ -87,7 +85,6 @@
     </div>
     <?php }} ?>
 
-    <!-- Canon Products -->
     <?php 
     $getCanon = $pd->latestFromCanon();
     if ($getCanon) {
